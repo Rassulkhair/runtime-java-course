@@ -1,2 +1,2 @@
 # Runtime-Homework
-This is my complete homework tasks from course Java
+This is my completed assignment for the Java course
