@@ -23,16 +23,17 @@ class Homework2 {
 
 ЗАДАЧА №2
 
-class Homework2 {
+
+class Homework {
     public static void main(String[] args) {
-        for (int i = 3; i == 3; i++) {
-            for (int j = 1; j <= 10; j++) {
-                System.out.println(i + "x" + j + "=" + i * j );
-            }
+        for (int i = 0; i <=10; i++) {
+            System.out.println("3*" +i+"="+(3*i));
+
 
         }
 
-     }
+    }
+}
      
      
      ЗАДАЧА№3
