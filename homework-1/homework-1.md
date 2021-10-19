@@ -9,7 +9,7 @@
 Длина в см; // double так как мм записывается с плавающей точкой
 Фамилия человека; // String так как это слово/строка
 Время года; //String так как это слово/строка
-Пол человека// String так как это слово/строка
+Пол человека// String так как это слово/строка ///// ТАкже может быть тип boolean (Если boolean isMale=true is true, если women , то false)   
 
 ЗАДАЧА №2
 int a = 120;
@@ -44,8 +44,8 @@ System.out.print(a + "World");
       int lawersalary1=55_000;
       int lawersalary2=40_000;
       int lawersalary3=70_000;
-      lawersalary1 = lawersalary1*2;
-      lawersalary2=lawersalary2+15_000;
+      lawersalary1 *= 2;
+      lawersalary2 += 15_000;
       System.out.println(lawersalary1);
       System.out.println(lawersalary2);
       System.out.println(lawersalary3);
