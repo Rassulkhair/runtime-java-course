@@ -1,0 +1,92 @@
+```jsx
+
+import java.util.Arrays;
+
+public class TestDrive {
+    public static void main(String[] args) {
+        int[] a = {7, -3, 9, -11, 18, 99, 2, 11};
+        System.out.println("Исходные элементы " + Arrays.toString(a));
+        System.out.println();
+
+        //Задача 1: Нужно вывести первые три элемента массива
+        System.out.println("первые три элемента массива");
+        int lsd = 3;
+        for (int i = 0; i < lsd; i++) {
+            System.out.print(" " + a[i]);
+
+        }
+        System.out.println();
+
+        // Задача 2: Вывести первую половину элементов массива
+        System.out.println("Первая половина элементов");
+        for (int i = 0; i < a.length / 2; i++) {
+            System.out.print(" " + a[i]);
+        }
+        System.out.println();
+        //Задача 3: Вывести вторую половину элементов
+        System.out.println("Вторая половина элементов");
+        for (int i = a.length / 2; i < a.length; i++) {
+            System.out.print(" " + a[i]);
+        }
+        System.out.println();
+
+        //Задача 4: Вывести все элементы кроме первого и последнего
+        System.out.println("Элемнты массива кроме первого и последнего ");
+        for (int i = 1; i < a.length - 1; i++) {
+            System.out.print(" " + a[i]);
+        }
+        System.out.println();
+
+        //Задача 5: Вывести последние три элементы массива
+        System.out.println("Последние три элементы массива ");
+        for (int i = 5; i < a.length; i++) {
+            System.out.print(" " + a[i]);
+        }
+        System.out.println();
+
+        // Задача 6: Вывести четные элементы массива
+        System.out.println("Вывести четные элементы массива ");
+        for (int i = 0; i < a.length; i += 2) {
+            System.out.print(" " + a[i]);
+        }
+        System.out.println();
+
+        //Задача 7: Вывести количество положительных и отрицательных элементов
+        int positiveCount = 0;
+        int negativeCount = 0;
+        for (int num : a) {
+            if (num > 0) {
+                positiveCount++;
+            } else if (num < 0) {
+                negativeCount++;
+            }
+        }
+        System.out.println("Количество положительных: " + positiveCount);
+        System.out.println("Количество отрицательных: " + negativeCount);
+
+        System.out.println();
+
+        //Вывести элементы массива которые больше предыдущего
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > a[i - 1]) {
+                System.out.print(" " + a[i]);
+            }
+        }
+        System.out.println();
+
+        //Вывести максимальное значение элемента и минимальный
+        int maxElement = 0;
+        int minElement = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] > a[maxElement]) {
+                maxElement = i;
+            } else if (a[i] < a[minElement]) {
+                minElement = i;
+            }
+        }
+        System.out.println(" " + a[maxElement]);
+        System.out.println(" " + a[minElement]);
+
+
+    }
+}
